@@ -1,0 +1,98 @@
+<!DOCtype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player | Artverbe </title>
+    <link rel="icon" type="icon" href="https://simplemodal.netlify.com/img/logo.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <section ondrop="drop(event)"ondragover="allow(event)">
+      <article>
+        <main>
+          <!-- __________________ Display Dialog Start ____________________ -->
+          <div id="displayDialog"class="Dialog" style=""><span id="leftM">Menu</span><span id="rightM"><button id="dots"class="dots">...</button></span></div>
+          <div class="box"id="video-container">
+            
+            <video src="E:\download\Mbaye_Wowe_Passy__Ft_Butera_Knowless.mp4" width="100%"poster="C:\Users\NEMIE\Desktop\app\modern_portfolio-master\dist\img\projects\project5.jpg" id="video">
+            </video>
+            <span id="controls" class="controls">
+            <div id="custom-controls" class="c-controls"><input id="volume" type="range" min="0" value="0"  /> <p class="max"></p><span class="duration"id="total">00:00/00:00</span>
+              <input id="volumeV" type="range" max="10" min="0" value="2" />
+           
+              <!-- <progress id="volumeP" type="range" min="5" max="100" value="0"></progress> -->
+              </div>
+              <div id="buttons">
+                <span>
+                  <button id="prev" class="prev"></button>
+                  <button id="play" class="play"></button>
+                  <button id="stop" class="stop"></button>
+                  <button id="next" class="next"></button>
+                  <button id="full" class="full"></button>
+                  <button id="fulls" class="fulls"></button>
+                  <button id="sound" class="sound"></button>
+                </span>
+              </div>
+                <h1 style="text-align: center;margin: 0 auto">Drag & Drop your files</h1>
+            </span>
+
+            <!-- ______________________Modal for ContextMenu on Video ______________________-->
+            <span class="contextmenu hide" >
+              <div class="overlay">
+                <a href="#" class="imageVideo">
+                Image video</a>
+              </div>
+            </span>
+          </div>
+          <div id="menug"class="box2 drop" ondrop="drop(event)"ondragover="allow(event)">
+            <span class="spaner"><span class="ext"id="extender"></span><label for="file_p" id="lab"class="input-from-left">Choose file</label></span>
+            
+            <input id="file_p" type="file"accept="video/*" hidden multiple>
+            <div ondrop="drop(event)"ondragover="allow(event)" for="i" class="drop">Drag & Drop here
+            </div>
+            
+            <ul>
+              Lorem
+            </ul>
+          </div>
+          <span id="playlist"class="box-co "> 
+             </span>
+
+          <!-- <div id=""class="box"> </div>
+          <div id=""class="box"> </div>
+          <div id=""class="box"> </div> -->
+          <footer class="footer"id='fot'>   <span id=""class=" card-carousel">
+              <button class="span-brn my-card">button2</button><div id=""class="my-card"></div>
+            <div id=""class="my-card"></div>
+            <div id=""class="my-card"></div>
+            <div id=""class="my-card"></div>
+            <div id=""class="my-card"></div>
+            <div id=""class="my-card"></div>
+            <div id=""class="my-card"></div>
+           </span> 
+            <button class="span-brn">button1</button> <span id=""class=" card-carousel">
+            <div id=""class="my-card"></div>
+            <div id=""class="my-card"></div>
+            <div id=""class="my-card"></div>
+           </span>
+            <button class="span-brn">button2</button>
+            <button class="span-brn">button3</button>
+            <button class="span-brn">button4</button>
+          </footer>
+        </main>
+      </article>
+    </section>
+    
+    <script src="./assets/js/main.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+    <script src="http://localhost:206/build/js/alljquery-3.js"></script>
+    <script src="./assets/js/mainJQ.js"></script>
+    <script >
+    </script>
+  </body>
+</html>
